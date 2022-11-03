@@ -57,6 +57,12 @@ use { "saadparwaiz1/cmp_luasnip" }
 use { "L3MON4D3/LuaSnip" } -- snippet engine
 use { "rafamadriz/friendly-snippets" } -- bunch of snippets to use
 
+--Mason nvim and LspConfig
+use {"williamboman/mason.nvim" }
+use {"williamboman/mason-lspconfig.nvim" }
+use {"neovim/nvim-lspconfig" }
+
+
 
 if PACKER_BOOTSTRAP then
 		require("packer").sync()
