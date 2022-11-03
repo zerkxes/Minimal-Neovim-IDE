@@ -46,6 +46,16 @@ use { "nvim-lua/plenary.nvim" }
 use { "nvim-lua/popup.nvim" }
 use { "joshdick/onedark.vim" }
 
+--CMP plugins --
+use { "hrsh7th/nvim-cmp" }
+use { "hrsh7th/cmp-buffer" }
+use { "hrsh7th/cmp-path" }
+use { "hrsh7th/cmp-cmdline" }
+use { "saadparwaiz1/cmp_luasnip" }
+
+--Snippets and snippet engine
+use { "L3MON4D3/LuaSnip" } -- snippet engine
+use { "rafamadriz/friendly-snippets" } -- bunch of snippets to use
 
 
 if PACKER_BOOTSTRAP then
