@@ -40,7 +40,7 @@ require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
-require('lspconfig')['tsserver'].setup{
+require('lspconfig')['eslint'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
@@ -53,6 +53,10 @@ require('lspconfig')['rust_analyzer'].setup{
     }
 }
 require'lspconfig'.clangd.setup{
+    on_attach=on_attach,
+    flags=lsp_flags,
+  }
+  require'lspconfig'.sumneko_lua.setup{
     on_attach=on_attach,
     flags=lsp_flags,
   }
