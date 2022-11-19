@@ -40,18 +40,17 @@ require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
-require('lspconfig')['eslint'].setup{
+require'lspconfig'.eslint.setup{
     on_attach = on_attach,
     flags = lsp_flags,
-}
-require('lspconfig')['rust_analyzer'].setup{
+ }
+
+require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    root_dir=function() return vim.loop.cwd() end
     -- Server-specific settings...
-    settings = {
-      ["rust-analyzer"] = {}
     }
-}
 require'lspconfig'.clangd.setup{
     on_attach=on_attach,
     flags=lsp_flags,
