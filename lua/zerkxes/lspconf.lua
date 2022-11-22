@@ -40,19 +40,29 @@ require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
+require'lspconfig'.eslint.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+ }
+
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
-}
-require('lspconfig')['rust_analyzer'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
+    root_dir=function() return vim.loop.cwd() end
     -- Server-specific settings...
-    settings = {
-      ["rust-analyzer"] = {}
     }
-}
 require'lspconfig'.clangd.setup{
     on_attach=on_attach,
     flags=lsp_flags,
+  }
+  require'lspconfig'.sumneko_lua.setup{
+    on_attach=on_attach,
+    flags=lsp_flags,
+  }
+  require'lspconfig'.jdtls.setup {
+    cmd={"jdtls"},
+    init_options={ jvm_args={}, workspace="home/runner/.cache/jdtls/workspace"},
+    single_file_support=true,
+    on_attach=on_attach,
+    root_dir=function() return vim.loop.cwd() end
   }
