@@ -59,3 +59,10 @@ require'lspconfig'.clangd.setup{
     on_attach=on_attach,
     flags=lsp_flags,
   }
+  require'lspconfig'.jdtls.setup {
+    cmd={"jdtls"},
+    init_options={ jvm_args={}, workspace="home/runner/.cache/jdtls/workspace"},
+    single_file_support=true,
+    on_attach=on_attach,
+    root_dir=function() return vim.loop.cwd() end
+  }
