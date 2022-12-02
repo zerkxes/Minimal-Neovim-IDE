@@ -62,7 +62,8 @@ use {"williamboman/mason.nvim" }
 use {"williamboman/mason-lspconfig.nvim" }
 use {"neovim/nvim-lspconfig" }
 
-
+--emmet ls 
+use {"mattn/emmet-vim"}
 
 if PACKER_BOOTSTRAP then
 		require("packer").sync()
