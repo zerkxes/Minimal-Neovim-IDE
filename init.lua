@@ -5,3 +5,4 @@ pcall(vim.cmd, 'colorscheme onedark')
 require "zerkxes.cmp"
 require "zerkxes.mason"
 require "zerkxes.lspconf"
+require "zerkxes.emmet"
