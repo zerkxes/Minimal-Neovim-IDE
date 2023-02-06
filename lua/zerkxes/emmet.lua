@@ -1,0 +1,2 @@
+--pcall(vim.cmd, "let g:user_emmet_mode='n'")
+--pcall(vim.cmd, "let g:user_emmet_mode='v'")

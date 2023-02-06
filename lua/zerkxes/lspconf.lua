@@ -40,10 +40,12 @@ require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
-require'lspconfig'.eslint.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
- }
+--require'lspconfig'.eslint.setup{
+--    --cmd={"vscode-eslint-language-server", "--stdio" },
+--    on_attach = on_attach,
+--    flags = lsp_flags,
+--    root_dir=function() return vim.loop.cwd() end
+-- }
 
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
@@ -66,3 +68,4 @@ require'lspconfig'.clangd.setup{
     on_attach=on_attach,
     root_dir=function() return vim.loop.cwd() end
   }
+

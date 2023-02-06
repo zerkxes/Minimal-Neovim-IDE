@@ -26,8 +26,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
---leader-e and leader-q is for diagnostics/ leader f seems a good replacement for today
-keymap("n", "<leader>f", ":Lex 30<cr>", opts)
+--leader-e and leader-q is for diagnostics/ ctrl-f seems a good replacement for today
+keymap("n", "<C-f>", ":Lex 30<cr>", opts)
 
 
 -- Resize with arrows
@@ -69,7 +69,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
 -- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
