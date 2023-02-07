@@ -45,7 +45,11 @@ use { "wbthomason/packer.nvim" }
 use { "nvim-lua/plenary.nvim" }
 use { "nvim-lua/popup.nvim" }
 use { "joshdick/onedark.vim" }
-use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+use({ "nvim-treesitter/nvim-treesitter" })
+use { "folke/tokyonight.nvim" }
+use { "tomasiser/vim-code-dark" }
+
+
 
 --CMP plugins --
 use { "hrsh7th/nvim-cmp" }
