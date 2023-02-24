@@ -87,4 +87,8 @@ Next we need to install python support (node is optional)
   LAlt + j,k      move text up and down
   p               paste text
   ```
+<<<<<<< HEAD
   </pre>
+=======
+</pre>
+>>>>>>> 1f6daaa0c725e63b1c834e3cfe9f80946364f6a7
