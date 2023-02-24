@@ -69,6 +69,7 @@ Next we need to install python support (node is optional)
   ```
  ## Keymaps
   Under lua/zerkxes a file named keymaps.lua exists. Some common keymaps include
+  <pre>
   ```
   For Normal mode
   Ctrl + h,j,k,l    window navigation
@@ -86,3 +87,4 @@ Next we need to install python support (node is optional)
   LAlt + j,k      move text up and down
   p           paste text
   ```
+</pre>
