@@ -71,18 +71,18 @@ Next we need to install python support (node is optional)
   Under lua/zerkxes a file named keymaps.lua exists. Some common keymaps include
   ```
   For Normal mode
-  Ctrl + h,j,k,l 		window navigation
-  Ctrl + f 			file explorer
-  Ctrl + arrows 		window resize
-  LShift + h,l 		buffer navigation
-  LAlt + j,k 			move text up and down
+  Ctrl + h,j,k,l    window navigation
+  Ctrl + f      file explorer
+  Ctrl + arrows     window resize
+  LShift + h,l    buffer navigation
+  LAlt + j,k      move text up and down
   ```
   ```
   For insert mode
-  jk/jk 				exit insert mode
+  jk/jk         exit insert mode
   ```
   ```
   For visual mode
-  LAlt + j,k 			move text up and down
-  p 					paste text
+  LAlt + j,k      move text up and down
+  p           paste text
   ```
