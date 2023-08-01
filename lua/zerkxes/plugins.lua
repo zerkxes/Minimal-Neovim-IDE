@@ -48,6 +48,7 @@ use { "joshdick/onedark.vim" }
 use({ "nvim-treesitter/nvim-treesitter" })
 use { "folke/tokyonight.nvim" }
 use { "tomasiser/vim-code-dark" }
+use { "ellisonleao/gruvbox.nvim" }
 
 
 
