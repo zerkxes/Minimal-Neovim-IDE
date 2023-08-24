@@ -43,9 +43,9 @@ packer.init({
 return packer.startup(function(use)
 use { "wbthomason/packer.nvim" }
 use { "nvim-lua/plenary.nvim" }
-use { "nvim-lua/popup.nvim" }
+use { "nvim-lua/popup.nvim", commit="b7404d35d5d3548a82149238289fa71f7f6de4ac" }
 use { "joshdick/onedark.vim" }
-use({ "nvim-treesitter/nvim-treesitter" })
+use({ "nvim-treesitter/nvim-treesitter", commit="31f608e47b838594d32a7bc42028e2cefd0ddaad" })
 use { "folke/tokyonight.nvim" }
 use { "tomasiser/vim-code-dark" }
 use { "ellisonleao/gruvbox.nvim" }
@@ -53,12 +53,12 @@ use { "ellisonleao/gruvbox.nvim" }
 
 
 --CMP plugins --
-use { "hrsh7th/nvim-cmp" }
-use { "hrsh7th/cmp-buffer" }
-use { "hrsh7th/cmp-path" }
-use { "hrsh7th/cmp-cmdline" }
-use { "saadparwaiz1/cmp_luasnip" }
-use { "hrsh7th/cmp-nvim-lsp" }
+use { "hrsh7th/nvim-cmp" ,commit="51f1e11a89ec701221877532ee1a23557d291dd5"}
+use { "hrsh7th/cmp-buffer", commit="3022dbc9166796b644a841a02de8dd1cc1d311fa" }
+use { "hrsh7th/cmp-path", commit="91ff86cd9c29299a64f968ebb45846c485725f23" }
+use { "hrsh7th/cmp-cmdline", commit="8ee981b4a91f536f52add291594e89fb6645e451" }
+use { "saadparwaiz1/cmp_luasnip", commit="18095520391186d634a0045dacaa346291096566" }
+use { "hrsh7th/cmp-nvim-lsp", commit="44b16d11215dce86f253ce0c30949813c0a90765" }
 
 
 --Snippets and snippet engine
@@ -66,9 +66,9 @@ use { "L3MON4D3/LuaSnip" } -- snippet engine
 use { "rafamadriz/friendly-snippets" } -- bunch of snippets to use
 
 --Mason nvim and LspConfig
-use {"williamboman/mason.nvim" }
-use {"williamboman/mason-lspconfig.nvim" }
-use {"neovim/nvim-lspconfig" }
+use {"williamboman/mason.nvim", commit="a51c2d063c5377ee9e58c5f9cda7c7436787be72" }
+use {"williamboman/mason-lspconfig.nvim", commit="2997f467881ac4faa6f8c5e7065e3a672297c8ad" }
+use {"neovim/nvim-lspconfig", commit="f7922e59aeb9bc3e31a660ea4e7405ffa3fc2c3a" }
 
 --emmet ls 
 use {"mattn/emmet-vim"}
